@@ -3,61 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radero Essentials</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Radero Essentials - Home</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 70px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            background-color: white;
+        }
+
+        .category {
+            text-align: center;
+            width: 20%;
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+        }
+
+        .category h3 {
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
+        <a href="index.html"><img src="images/logo.png" alt="Radero Essentials Logo"></a>
         <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Radero Essentials Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="new-arrivals.html">New Arrivals</a></li>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Radero Essentials</h1>
-        <p>Your destination for premium clothing and accessories</p>
-        <a href="shop.html" class="btn">Shop Now</a>
-    </section>
+    <div class="hero">
+        <div>
+            <h1>Welcome to Radero Essentials</h1>
+            <p>Timeless & Versatile Clothing</p>
+            <button onclick="location.href='shop.html'">Shop Now</button>
+        </div>
+    </div>
 
-    <!-- Featured Categories -->
-    <section class="featured-categories">
+    <div class="categories">
         <div class="category">
-            <img src="images/category1.jpg" alt="Category 1">
-            <h2>Men's Fashion</h2>
+            <a href="shop.html"><img src="images/category-men.jpg" alt="Men's Clothing"></a>
+            <h3>Men</h3>
         </div>
         <div class="category">
-            <img src="images/category2.jpg" alt="Category 2">
-            <h2>Women's Fashion</h2>
+            <a href="shop.html"><img src="images/category-women.jpg" alt="Women's Clothing"></a>
+            <h3>Women</h3>
         </div>
         <div class="category">
-            <img src="images/category3.jpg" alt="Category 3">
-            <h2>Accessories</h2>
+            <a href="shop.html"><img src="images/category-new.jpg" alt="New Arrivals"></a>
+            <h3>New Arrivals</h3>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <!-- Footer content -->
-        </div>
+    <footer class="footer">
+        <p>&copy; 2024 Radero Essentials. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
 
-    <!-- JavaScript for interaction (if needed) -->
-    <script src="scripts.js"></script>
+    <script>
+        // Internal JavaScript if needed
+    </script>
 </body>
 </html>
