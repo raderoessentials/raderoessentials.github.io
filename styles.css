@@ -55,74 +55,12 @@ footer {
 
 /* Page-Specific Styles */
 
-.hero {
-    background-image: url('images/hero.jpg'); /* Change to your hero image */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-.featured-categories {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.category {
-    flex: 1 1 250px;
-    margin: 10px;
-    text-align: center;
-}
-
-.category img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.collections {
-    text-align: center;
-}
-
-.collection {
-    display: inline-block;
-    margin: 20px;
-}
-
-.collection img {
-    width: 300px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.collection-info {
-    margin-top: 10px;
-}
-
 .product {
-    margin: 20px;
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .product img {
@@ -135,39 +73,11 @@ footer {
     margin-top: 10px;
 }
 
-.blog-post {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
+.product p {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
+.product button {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -177,6 +87,6 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.product button:hover {
     background-color: #555;
 }
