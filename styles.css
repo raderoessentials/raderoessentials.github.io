@@ -34,10 +34,8 @@ nav {
     padding: 1rem 2rem;
 }
 
-.logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
+.logo img {
+    height: 50px;
 }
 
 .nav-links {
@@ -300,4 +298,3 @@ footer {
         display: flex;
     }
 }
-
